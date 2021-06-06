@@ -1,0 +1,137 @@
+<html>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<head><title>PPOB LISTRIK</title></head>
+	<link rel="stylesheet" type="text/css"	href="css/style.css">
+	<style type="text/css">
+		body{
+		background-color: white;
+		background-size:100%;
+		background-attachment:fixed;
+		margin:0;
+		}
+		body, html {
+			height: 100%;
+			margin: 0;
+		  }
+
+	  .bg-img {
+		/* The image used */
+		background-image: url("images/main.jpg");
+		height: 50%;
+		background-position: center;
+		background-size: cover;
+		position: relative;
+		color: white;
+		font-family: "Courier New", Courier, monospace;
+		font-size: 25px;
+		min-height: 380px;
+	  
+		/* Center and scale the image nicely */
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	  
+		/* Needed to position the navbar */
+		position: relative;
+	  }
+	</style>
+</head>
+<body>
+  <div class="bg-img">
+	<div class="container1">
+	  <div class="navbar">
+		  <a href="#home">Home</a>
+		  <a href="#news">News</a>
+		  <div class="dropdown">
+		    <button class="dropbtn">Dropdown 
+		      <i class="fa fa-caret-down"></i>
+		    </button>
+		    <div class="dropdown-content">
+		      <a href="#">Link 1</a>
+		      <a href="#">Link 2</a>
+		      <a href="#">Link 3</a>
+		    </div>
+		  </div> 
+		  <div class="dropdown">
+		    <button class="dropbtn">Dropdown 
+		      <i class="fa fa-caret-down"></i>
+		    </button>
+		    <div class="dropdown-content">
+		      <a href="#">Link 1</a>
+		      <a href="#">Link 2</a>
+		      <a href="#">Link 3</a>
+		    </div>
+		  </div> 
+		</div>
+	</div>
+	  <div class="middle">
+		<h1>PPOB LISTRIK</h1>
+		<hr>
+		<p>PT. PLN (Persero)</p>
+	  </div>
+  </div>
+
+  <div class="row">
+	<div class="main">
+	  <h2>TRANSAKSI PEMBAYARAN LISTRIK</h2>
+	  <br><hr>
+		<label>Nama Pelanggan </label>
+		<input type="text" id="nama"><br>
+		<p></p>
+		<label>Alamat </label>
+		<input type="text" id="alamat"><br>
+		<p></p>
+		<label>Nomor Seri </label>
+		<input type="text" id="nomor"><br>
+		<p></p>
+		<label>Meter Awal </label>
+		<input type="text" id="awal"><br>
+		<p></p>
+		<label>Meter Akhir </label>
+		<input type="text" id="akhir"><br>
+		<p></p>
+		<label>Tegangan </label>
+		<select id="kwh">
+			<option value="450">450 VA</option>
+			<option value="900">900 VA</option>
+			<option value="1200">1200 VA</option>
+		</select>
+		<br><hr>
+		<pre id="total" style="border: 1px dashed black;"></pre>
+		<br><hr>
+		<button onclick="hasil()" class="btn proses">Proses</button>
+	</div>
+  </div>
+
+<div class="about-section">
+    <h1>About Us Page</h1>
+    <p>Web Simulasi Pembayaran Listrik menggunakan Front-End Programming</p>
+    <p>Prodi/NIM/Nama : S1 SI / 19051214096 / Dinda Kartikasari</p>
+	<p>Kelompok : B03 - Project Web Pembayaran Listrik</p>
+  </div>
+
+  <div class="row">
+	<div class="main">
+	  <h2>PLN Raih Renewable Energy Markets Asia Awards 2021</h2>
+	  <h5>Energi, 11 Maret 2021</h5>
+	  <div class="fakeimg" style="height:200px;background-image: url('Images/pln1.jpeg');"></div>
+	  <p>JPLN meraih penghargaan pada gelaran perdana Renewable Energy Markets (REM) Asia Awards 2021. Ini diraih atas upaya PLN dalam membangun pasar atau menunjukkan kepemimpinan dalam pengadaan energi hijau di Asia melalui renewable products services yang di keluarkan oleh PLN, yaitu Renewable Energy Certificate (REC).</p>
+	  <p>"Penghargaan ini merupakan bukti komitmen PLN dalam mendorong penggunaan energi bersih terutama pada sektor ketenagalistrikan," ujar Executive Vice President Komunikasi Korporat dan CSR PLN, Agung Murdifi dalam keterangan tertulis, Kamis (11/3/2021).</p>
+	  <p>"Ke depannya, PLN akan terus meningkatkan penggunaan bauran energi bersih pada pembangkit-pembangkit yang dimiliki oleh PLN," imbuhnya.</p>
+	  <br>
+	  <h2>Mulai April Listrik Gratis Dihapus, tapi Masih Ada Diskon</h2>
+	  <h5>Energi, 22 Maret 2021</h5>
+	  <div class="fakeimg" style="height:200px;background-image: url('Images/pln3.jpeg');"></div>
+	  <p>Stimulus listrik bagi masyarakat kecil, pelaku usaha seperti industri dan bisnis, serta sosial diperpanjang untuk periode April-Juni 2021. Namun skemanya berubah, tak ada lagi listrik gratis.</p>
+	  <p>"PLN siap mendukung dan menjalankan keputusan pemerintah untuk terus memberikan stimulus listrik bagi masyarakat kecil, pelaku usaha dan sosial yang terdampak COVID-19. Karena sifatnya perpanjangan, saya yakin penyaluran akan berjalan lancar," tutur Direktur Niaga dan Manajemen Pelanggan PLN, Bob Saril, dalam keterangan tertulis, Senin (22/3/2021).</p>
+	  <p>Stimulus dari pemerintah yang diberikan lewat PLN merupakan bentuk perlindungan sosial untuk masyarakat di tengah pandemi COVID-19.</p>
+	</div>
+  </div>
+<div style="clear:both"></div>
+<footer>
+	<p>Author: Dinda Kartikasari<br>
+	<a>Copyright &copy;2021</a></p>
+  </footer>
+  <script src="Javascript/kode-script.js"></script>
+</body>
+</html>
