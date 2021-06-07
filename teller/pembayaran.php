@@ -222,7 +222,7 @@
 					}else{
 						$aksi->update("tagihan",array('status'=>"Terbayar"),"id_pelanggan = '$id_pel' AND bulan = '$bln' AND tahun = '$thn' AND status = 'Belum Bayar'");
 						$aksi->simpan($table,$field);
-						$aksi->alert("Data Berhasil Disimpan","struk.php?id_pelanggan=".$id_pel."&bulan=".$bln."&tahun=".$thn);
+						$aksi->alert("Data Berhasil Disimpan","bukti.php?id_pelanggan=".$id_pel."&bulan=".$bln."&tahun=".$thn);
 					}
 				}
 
