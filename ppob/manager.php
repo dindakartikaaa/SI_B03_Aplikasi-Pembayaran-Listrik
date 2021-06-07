@@ -12,7 +12,7 @@
 	$today = date("Ymd");
 	$manager = $aksi->caridata("manager WHERE id_manager LIKE '%$today%' ORDER BY id_manager DESC");
 	$kode = substr($manager['id_manager'], 9,3)+1;
-	$id_manager = sprintf("M".$today.'%03s',$kode);
+	$id_manager = sprintf("P".$today.'%03s',$kode);
 
 	// cek username
 	@$cek_user = $aksi->cekdata("manager WHERE username = '$_POST[username]'");
