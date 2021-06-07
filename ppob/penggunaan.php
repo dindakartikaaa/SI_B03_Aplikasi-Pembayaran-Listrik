@@ -12,7 +12,7 @@
 		$id_pel = $_POST['id_pelanggan'];
 		$penggunaan = $aksi->caridata("penggunaan WHERE id_pelanggan = '$id_pel' AND meter_akhir = '0'");
 		if ($penggunaan == "") {
-			$aksi->pesan('Data Bulan ini sudah diinput');
+			$aksi->pesan('Data ini sudah terhapus');
 		}
 	}elseif(isset($_GET['hapus']) OR isset($_GET['edit'])){
 		$penggunaan = $aksi->caridata("penggunaan WHERE id_penggunaan = '$id'");
