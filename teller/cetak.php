@@ -13,8 +13,8 @@
 
  	$teller = $aksi->caridata("teller WHERE id_teller = '$_SESSION[id_teller]'");
 
-	if(isset($_GET['excel'])){
-    	header("Content-type:aplication/vnd-ms-excel");
+	if(isset($_GET['cetak'])){
+    	header("Content-type:aplication/vnd-ms-cetak");
 		header("Content-type: application/image/png");
     	header("Content-disposition:attachment; filename=".$filename.".xls");
     }
@@ -42,7 +42,7 @@
 <!-- INI BAGIAN HEADER LAPORAN -->
 	<table width="100%" border="0" cellspacing="0">
 		<tr>
-			<?php if(isset($_GET['excel'])){ ?>
+			<?php if(isset($_GET['cetak'])){ ?>
 					<td>&nbsp;</td>
 				<?php }else{ ?>
 					<td style="margin-top: -20px;" width="15%" valign="top">
