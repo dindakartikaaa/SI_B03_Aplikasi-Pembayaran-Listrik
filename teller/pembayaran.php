@@ -85,7 +85,7 @@
 					if($pelanggan==""){
 							echo "<div class='col-md-12'><center><h2>ID PELANGGAN TIDAK DITEMUKAN</h2></center></div>";
 					}elseif($tagihan == 0){
-							$aksi->pesan("ID Pelangan Tidak Memiliki Tunggakan Tagihan");
+							$aksi->pesan("ID Pelanggan Tidak Memiliki Tunggakan Tagihan");
 					}else{
 			?>
 					
