@@ -12,10 +12,10 @@
 	$today = date("Ymd");
 	$teller = $aksi->caridata("teller WHERE id_teller LIKE '%$today%' ORDER BY id_teller DESC");
 	if (empty($teller)) {
-		$id_teller="A".$today."001";
+		$id_teller="T".$today."001";
 	}else{
 		$kode = substr($teller['id_teller'], 9,3)+1;
-		$id_teller = sprintf("A".$today.'%03s',$kode);
+		$id_teller = sprintf("T".$today.'%03s',$kode);
 	}
 
 	// cek username
