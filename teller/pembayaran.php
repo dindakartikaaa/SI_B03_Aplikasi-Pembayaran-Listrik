@@ -197,7 +197,7 @@
 				@$bayar = $_POST['bayar'];
 				@$kembali = $_POST['kembali'];
 				@$tanggal = date("Y-m-d");
-				@$id_agen = $_SESSION['id_agen'];
+				@$id_teller = $_SESSION['id_teller'];
 
 				@$id_pel = $_GET['id_pelanggan'];
 				@$bln = $_GET['bulan'];
@@ -213,7 +213,7 @@
 					'total_akhir'=>$total_akhir,
 					'bayar'=>$bayar,
 					'kembali'=>$kembali,
-					'id_agen'=>$id_agen,
+					'id_teller'=>$id_teller,
 				);
 
 				if (isset($_POST['bbayar'])) {
